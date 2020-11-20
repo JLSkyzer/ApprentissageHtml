@@ -1,0 +1,121 @@
+body, html
+{
+	height: 100%;
+	background-image: url("../img/fonddecrt_3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a
+{
+	color: black;
+}
+
+header.titre
+{
+	text-align: center;
+	line-height: 10px;
+	color: white;
+	text-shadow: 6px 6px 3px black;
+	border: 5px solid red;
+	width: 25%;
+	margin: auto;
+	box-shadow: 3px 3px 3px black;
+}
+
+header.jointitle
+{
+	text-align: center;
+	line-height: 10px;
+	color: white;
+	text-shadow: 6px 6px 3px black;
+	border: 5px solid blue;
+	width: 25%;
+	margin: auto;
+	box-shadow: 6px 6px 6px black;
+}
+
+nav.navi
+{
+	display: block;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+
+nav.navi ul.nav li a
+{
+	text-decoration: none;
+}
+
+nav.navi ul.nav
+{
+	list-style-type:none;
+	margin-top: 50px;
+}
+
+ul.nav li
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	list-style-type:none;
+	background-color: white;
+	line-height: 30px;
+}
+
+ul.nav li a:hover
+{
+	background-color: #7d7d7d;
+	color: black;
+	transition: 0.7s;
+}
+
+ul.nav li:hover
+{
+	background-color: #7d7d7d;
+	color: white;
+	transition: 0.7s;
+}
+
+section.section-1
+{
+	
+}
+
+p.Copyright
+{
+	color: white;
+	background-color: gray;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	height: 20px;
+	margin-top: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  background-color: gray;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
