@@ -1,4 +1,4 @@
-<!-- Avant de commencer le site, il va falloir importer le fichier.css et mettre le en utf8 pour avoir des à, é etc... -->
+Avant de commencer le site, il va falloir importer le fichier.css et mettre le en utf8 pour avoir des à, é etc... -->
 
 <head>
 	<meta charset="utf-8">
@@ -211,4 +211,155 @@ id = on peut avoir qu'une seul choses avec le nom de l'id
 		</article>
 	</section>
 
+<!-- Pour crée un tableau -->
 
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+<!-- Exemple de tableau -->
+
+	<table>
+		<tr>
+			<td>Jours</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Lundi</td>
+			<td>1.600€</td>
+		</tr>
+	</table>
+
+<!-- Pour crée un entête de tableau -->
+
+	<table>
+		<tr>
+			<th>Nom</th>
+			<th>âge</th>
+			<th>Pays</th>
+		</tr>
+		<tr>
+			<td>Killian</td>
+			<td>16 ans</td>
+			<td>France</td>
+		</tr>
+	</table>
+
+<!-- Petit exemple de tete de tableau (tete-tableau.png) -->
+
+<!-- Pour crée un titre au dessus du tableau -->
+
+	<table>
+		<caption>Le Titre du tableau</caption>
+		<tr>
+			<th>Nom</th>
+			<th>âge</th>
+			<th>Pays</th>
+		</tr>
+		<tr>
+			<td>Killian</td>
+			<td>16 ans</td>
+			<td>France</td>
+		</tr>
+	</table>
+
+<!-- Crée un formulaire -->
+
+<!-- Pour crée un formulaire, écrivez ceci -->
+
+	<form>
+	</form>
+
+<!-- Il va falloi mettre une methode a notre puce -->
+
+<!-- A 99% du temps, on utilise la method post -->
+
+<form method="post">
+	
+</form>
+
+<!-- et aussi une action pour enregistrer le formulaire -->
+
+<form method="post" action="file.php">
+	
+</form>
+
+<!-- Voici toute les puces qui vous seront utile -->
+
+<form method="post" action="file.php">
+	
+	<p>
+		<label for="pseudo">Votre pseudo</label>
+		<input type="text" name="pseudo" id="pseudo"> <!-- une zone de texte -->
+
+		<input type="password" name="Mot de passe"> <!-- Un champs de texte pour mot de passe -->
+
+		<textarea rows="5" cols="100">Le texte</textarea>
+		<!-- rows = Colone / Cols = taille en longueur -->
+
+		<input type="email" name="email">
+		<input type="url" name="url">
+		<input type="tel" name="telephone">
+		<input type="number" name="age">
+		<!-- Vous pouvez ajouter les atributs:
+		- min
+		- max
+		- (pour savoir de cb en cb il avance) -->
+		<input type="range" name="age">
+		<input type="color" name="prenez une couleur">
+		<input type="date" name="Date de naissance">
+		<input type="search" name="Barre de recherche">
+		<input type="checkbox" name="Checkboard">
+		<!-- Mettre l'atribut (checked) pour qu'il soit deja coché -->
+		<input type="radio" name="age">
+		<!-- La radio permet de choisir que un seul choix dans un groupe. Pour cela il suffit juste de leur donner la meme valeur a "name" -->
+
+		<!-- On peut aussi faire un cadre déroulant -->
+
+		<label for="pays">Dans quel pays habiter vous</label><br />
+		<select name="pays" id="pays">
+			<option value="france">France</option>
+			<option>Espagne</option>
+		</select>
+		<!-- on a l'attribut "selected" -->
+	</p>
+
+	<!-- Pour mettre le formulaire dans un cadre -->
+
+	<fieldset>
+		<legend>Vos infos</legend>
+
+		<p>
+			<label for="pseudo">Votre pseudo</label>
+			<input type="text" name="pseudo" id="pseudo">
+		</p>
+
+		<p>
+			<label for="mdp">Votre Mot de passe</label>
+			<input type="password" name="mdp" id="mdp">
+		</p>
+
+		<p>
+			<label for="email">Votre Mot de passe</label>
+			<input type="email" name="email" id="email">
+		</p>
+
+		<input type="submit" name="Envoyer">
+	</fieldset>
+
+<input type="password" name="mdp" id="mdp" required>
+<!-- L'attribut required sert a obliger la personne a mettre une valeur -->
+
+</form>
+
+<!-- Les attribut qui vous seront utile -->
+
+maxlength="10" <!-- Charactere maxi -->
+value="Pseudo" <!-- Valeur deja marqué

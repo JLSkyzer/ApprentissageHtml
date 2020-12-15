@@ -310,4 +310,102 @@ article.bas-droite
 	border: 3px solid black;
 }
 
+/*Background image avec zero probleme*/
 
+body
+{
+	height: auto;
+	width: 100%;
+	background-image: url("../img/image.png");
+	background-color: gray;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+
+/*Les inline-block*/
+
+/*Pour cmmencer on lui donne ca propriété display*/
+
+nav
+{
+	display: inline-block;
+	/*Si vous texte est positionner vers le bas ou autre endroit, ecrivez ceci en dessous*/
+	vertical-align: top;
+}
+
+/*La position "absolute"*/
+
+/*Les charactéristique est qu'on peut le mettre partout*/
+
+nav
+{
+	position: absolute;
+	/*Vous pouvez le bouger comme ca*/
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	/*Le z-index*/
+	/*La choses qui a un z-index plus grande que les autres, il sera au dessus de tous*/
+	z-index: 5;
+}
+
+/*La position relative: La position relative sert a le bouger avec les padding etc...*/
+
+/* Pour mettre des bordure au tableaux */
+
+td /* Pour crée la bordure */
+{
+	border: 1px solid red;
+}
+
+table /* Pour coller les bordures */
+{
+	border-collapse: collapse;
+}
+
+/* Crée une barre coloré */
+
+div
+{
+	display: table;
+	background-color: rgba(67, 67, 66, .40);
+	color: blue;
+	text-align: center;
+	top: 0;
+  	left: 0;
+  	height: 100px;
+  	width: 100%;
+}
+
+/* Pour enlever le soulignage des liens */
+
+a
+{
+	text-decoration: none;
+}
+
+/*Pour mettre vos block en colone*/
+
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Pour modifier l'espace entre chaque bloc
+
+Voir justify_content.png*/
+
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Pour aligner un text dans un cadre */
+
+div.test
+{
+	line-height: 50px;
+}

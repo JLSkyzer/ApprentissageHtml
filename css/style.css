@@ -1,10 +1,48 @@
-body, html
+body
 {
-	height: 100%;
-	background-image: url("../img/fonddecrt_3.jpg");
-	background-position: center;
+	height: auto;
+	width: 100%;
+	background-image: url("../img/Cold-War-street.png");
+	background-color: gray;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
+	font-family: Verdana;
+}
+
+div.title
+{
+	display: table;
+	background-color: rgba(213, 1, 1, 0.1);
+	color: blue;
+	text-align: center;
+	top: 0;
+  	left: 0;
+  	height: 100px;
+  	width: 100%;
+}
+
+div.text
+{
+	display: table;
+	background-color: rgba(67, 67, 66, 1);
+	color: white;
+	margin-left: 100px;
+	text-align: center;
+	overflow: scroll;
+	top: 0;
+  	left: 0;
+  	height: 500px;
+  	width: 400px;
+}
+
+h2.h2title
+{
+	color: white;
+}
+
+span.faction
+{
+	color: red;
 }
 
 a
@@ -12,16 +50,10 @@ a
 	color: black;
 }
 
-header.titre
+a.doc
 {
-	text-align: center;
-	line-height: 10px;
-	color: white;
-	text-shadow: 6px 6px 3px black;
-	border: 5px solid red;
-	width: 25%;
-	margin: auto;
-	box-shadow: 3px 3px 3px black;
+	text-decoration: none;
+	color: green;
 }
 
 header.jointitle
@@ -64,7 +96,7 @@ ul.nav li
 	margin-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
-	list-style-type:none;
+	list-style-type: none;
 	background-color: white;
 	line-height: 30px;
 }
@@ -83,10 +115,6 @@ ul.nav li:hover
 	transition: 0.7s;
 }
 
-section.section-1
-{
-	
-}
 
 p.Copyright
 {
@@ -97,25 +125,138 @@ p.Copyright
 	text-align: center;
 	height: 20px;
 	margin-top: 5px;
+	z-index: 100;
 }
+
+/* Page des classes */
+
+
+
+div.assault-rifle-categorie
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.sniper-categorie
+{
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+
+div.Gunsmith-categorie
+{
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+}
+
+h2.assault-rifle-title
+{
+	color: white;
+	text-align: center;
+}
+
+h2.Sniper-title
+{
+	color: white;
+	text-align: center;
+}
+
+h2.GunSmith-title
+{
+	color: white;
+	text-align: center;
+}
+
+	/* FFAR 1 */
+
+img.img-all-gun
+{
+	height: 100px;
+	width: 200px;
+}
+
+div.ffar-1
+{
+	color: White;
+}
+
+h3.title-all-gun
+{
+	margin-left: 50px;
+}
+
+	/* AK 47 */
+
+div.ak-47
+{
+	color: white;
+	margin-left: 20px;
+}
+
+/* Retour Bouton */
+
+
+
+div.exit-btn a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	height: 50px;
+	width: 150px;
+	background-color: gray;
+	text-align: center;
+	line-height: 50px;
+}
+
+div.exit-btn a:hover
+{
+	background-color: black;
+	transition: 0.7s;
+}
+
+/* Page arme */
+
+table.ALL-GUN
+{
+	background-color: black;
+	color: white;
+	border-collapse: collapse;
+	margin-top: 25px;
+}
+
+table.ALL-GUN tr td
+{
+	border: 3px solid red;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Page AK 47 */
+
+
 
 /* width */
 ::-webkit-scrollbar {
-  background-color: gray;
+  background-color: black;
   width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2e2e2d;
+  background: rgb(181, 118, 85);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: gray;
+  border-radius: 5px;
+  background: #6e1602;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #a34a36;
+}
