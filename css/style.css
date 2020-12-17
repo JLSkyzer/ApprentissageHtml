@@ -136,6 +136,12 @@ div.assault-rifle-categorie
 {
 	display: flex;
 	flex-wrap: wrap;
+	color: white;
+}
+
+div.assault-rifle-categorie div
+{
+	margin-left: 20px;
 }
 
 div.sniper-categorie
@@ -178,22 +184,9 @@ img.img-all-gun
 	width: 200px;
 }
 
-div.ffar-1
-{
-	color: White;
-}
-
 h3.title-all-gun
 {
 	margin-left: 50px;
-}
-
-	/* AK 47 */
-
-div.ak-47
-{
-	color: white;
-	margin-left: 20px;
 }
 
 /* Retour Bouton */
@@ -222,7 +215,7 @@ div.exit-btn a:hover
 
 table.ALL-GUN
 {
-	background-color: black;
+	background-color: rgba(127, 127, 127, 0.40);
 	color: white;
 	border-collapse: collapse;
 	margin-top: 25px;
@@ -231,8 +224,19 @@ table.ALL-GUN
 table.ALL-GUN tr td
 {
 	border: 3px solid red;
+	box-shadow: 5px 5px black;
 	text-align: center;
 	padding: 10px;
+}
+
+td.type
+{
+	color: yellow;
+}
+
+td.item
+{
+	color: green;
 }
 
 /* Page AK 47 */
