@@ -30,7 +30,8 @@
 		</p> <br />
 
 		<div class="meteo">
-
+        <p>Nous somme le: </p> 
+        <?php echo date('d/m/Y h:i:s'); ?>
 		</div>
 		
 		<script src="script.js"></script>
